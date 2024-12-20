@@ -1,70 +1,94 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here's how you can run the React app step by step:
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### **1. Install Node.js and npm**
+React requires **Node.js** and **npm** to run. If you don't have them installed:
 
-### `npm start`
+- Download and install Node.js from [nodejs.org](https://nodejs.org/).
+- Verify the installation by running the following commands:
+  ```bash
+  node -v
+  npm -v
+  ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **2. Create a New React App**
+If you haven't created the app yet:
+1. Open a terminal/command prompt.
+2. Run the following command to create a new React app:
+   ```bash
+   npx create-react-app codeant-ai
+   ```
+   This creates a folder named `codeant-ai` with the necessary files and configurations.
 
-### `npm test`
+3. Navigate into the project directory:
+   ```bash
+   cd codeant-ai
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### **3. Add the Code**
+1. Replace the contents of the following files with the provided code:
+   - `src/App.js`
+   - `src/index.js`
+   - `src/index.css`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Create a `components` folder inside the `src` directory:
+   - Add the following files to `src/components`:
+     - `Sidebar.js`
+     - `Header.js`
+     - `RepositoryList.js`
+   - Paste the corresponding component code into each file.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Optionally, create `styles.css` in the `src` folder for global styles and import it in `index.js`:
+   ```javascript
+   import './styles.css';
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### **4. Start the Development Server**
+To run the React app, use the following commands:
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This starts the development server, and the app will automatically open in your default browser at:
+```
+http://localhost:3000
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **5. View and Debug**
+- If the app doesn't open automatically, open your browser and navigate to `http://localhost:3000`.
+- Any changes you make to the code will automatically reload the app in your browser (thanks to React's live reloading feature).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### **6. Build for Production (Optional)**
+When you're ready to deploy the app:
+```bash
+npm run build
+```
+This creates an optimized production build in the `build/` folder.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Common Errors and Fixes
+1. **`npx` not recognized**:
+   - Ensure Node.js and npm are installed correctly.
 
-### Code Splitting
+2. **Permission errors**:
+   - Use `sudo` on macOS/Linux or run your terminal as Administrator on Windows.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **App not running on `localhost`**:
+   - Check if the terminal shows any error messages.
+   - Ensure no other app is using port `3000`.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let me know if you encounter any issues while running it!
